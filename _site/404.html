@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- 
+This template is licensed under MIT License
+Personal content is copyrighted and requires permission to use
+-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Page Not Found | Tim Möbus</title>
+  <meta name="description"
+    content="            404        Page Not Found    ">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="http://localhost:4000/404.html">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/favicon-512x512.png">
+
+  <!-- MathJax Configuration -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+  <div class="layout-wrapper">
+    <!-- Sidebar -->
+    <aside class="sidebar" role="complementary">
+      <div class="sidebar-content">
+        <!-- Profile Section -->
+        <div class="profile">
+          <div class="profile-image">
+            <img src="/assets/images/profile.png" alt="Tim Möbus profile picture"
+              loading="lazy">
+          </div>
+        </div>
+
+        <!-- Text Content Container -->
+        <div class="sidebar-text-content">
+          <h1 class="profile-name">Tim Möbus</h1>
+          <p class="profile-bio">QuantEra postdoctoral researcher
+Quantum Information Theory
+University of Cambridge</p>
+
+          <!-- Social Links -->
+          <div class="social-links" role="navigation" aria-label="Social media links">
+            
+            <a href="#" onclick="sendEmail()" aria-label="Email contact">@Email</a>
+            <script>
+              function sendEmail() {
+                const user = 'moebustim';
+                const domain = 'gmail.com';
+                window.location.href = 'mailto:' + user + '@' + domain;
+              }
+            </script>
+            
+            
+            <a href="https://orcid.org/0000-0003-0471-2745" aria-label="ORCID profile">ORCID</a>
+            
+            
+            <a href="https://linkedin.com/in/mittim-moebus" aria-label="LinkedIn profile">LinkedIn</a>
+            
+            
+            <a href="https://github.com/MitTimM" aria-label="GitHub profile">GitHub</a>
+            
+          </div>
+
+          <!-- Navigation -->
+          <nav class="sidebar-nav" role="navigation" aria-label="Main navigation">
+            <a href="/" class="" >
+              Home
+            </a>
+            <a href="/projects/" class=""
+              >
+              Projects
+            </a>
+            <a href="/cv/" class="" >
+              CV
+            </a>
+            <a href="/talks/" class="" >
+              Talks
+            </a>
+          </nav>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Container -->
+    <div class="content-container">
+      <!-- Main Content -->
+      <main class="main-content" id="main-content" role="main">
+        <div class="content-width">
+          <div class="content-section">
+    <div class="page-header">
+        <h1 class="page-title">404</h1>
+        <p class="page-subtitle">Page Not Found</p>
+    </div>
+
+    <div class="content-section">
+        <p class="text-secondary">
+            Sorry, the page you're looking for doesn't exist. It might have been moved, deleted, or you may have typed
+            the URL incorrectly.
+        </p>
+    </div>
+</div>
+
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="site-footer" role="contentinfo">
+        <div class="footer-content">
+          <p>
+            © 2026 Tim Möbus.
+            Built with <a href="https://jekyllrb.com/">Jekyll</a>,
+            hosted on <a href="https://pages.github.com/">GitHub Pages</a>
+            and inspired by <a href="https://paul-the-wizord.github.io">Paul Gondolf</a>.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // Handle collapsible abstract items
+    document.addEventListener('DOMContentLoaded', function () {
+      const abstractToggles = document.querySelectorAll('.abstract-toggle');
+
+      abstractToggles.forEach(button => {
+        button.addEventListener('click', function (e) {
+          e.preventDefault();
+          const abstractParagraph = this.previousElementSibling;
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+          abstractParagraph.classList.toggle('expanded', !isExpanded);
+          this.setAttribute('aria-expanded', !isExpanded);
+          this.textContent = isExpanded ? 'Show more' : 'Show less';
+        });
+      });
+
+      // Handle collapsible CV detail items
+      const cvDetailToggles = document.querySelectorAll('.cv-detail-toggle');
+
+      cvDetailToggles.forEach(button => {
+        const detailText = button.previousElementSibling;
+
+        // Check if text is truncated
+        const isTruncated = detailText.scrollHeight > detailText.clientHeight;
+
+        if (isTruncated) {
+          button.classList.add('visible');
+        }
+
+        button.addEventListener('click', function (e) {
+          e.preventDefault();
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+          detailText.classList.toggle('expanded', !isExpanded);
+          this.setAttribute('aria-expanded', !isExpanded);
+          this.textContent = isExpanded ? 'Show more' : 'Show less';
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+<header class="page-header">
+    <h1 class="page-title">{{ page.title | default: "Welcome" }}</h1>
+    {% if page.description %}
+    <p class="page-subtitle">{{ page.description }}</p>
+    {% endif %}
+</header>
+
+<!-- Main Content -->
+{% if content and content != empty %}
+<section class="content-section">
+    {{ content }}
+</section>
+{% endif %}

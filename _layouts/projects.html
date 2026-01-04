@@ -1,0 +1,113 @@
+---
+layout: default
+---
+
+<header class="page-header">
+    <h1 class="page-title">{{ page.title }}</h1>
+    {% if page.description %}
+    {{page.description}}
+    {% endif %}
+</header>
+
+<!-- Code Section -->
+{% if page.numerical_simulations and page.numerical_simulations.size > 0 %}
+<section class="content-section">
+    <h2 class="section-title">Algorithms, Simulations & Web Code</h2>
+    <div class="content-width">
+        <div class="grid">
+            {% for project in page.numerical_simulations %}
+            <a href="{{ project.url }}" class="project-card" target="_blank" rel="noopener noreferrer">
+                {% if project.preview_image %}
+                <div class="project-card-image">
+                    <img src="{{ project.preview_image }}" alt="{{ project.name }}">
+                </div>
+                {% endif %}
+                <div class="project-card-content">
+                    <h4>{{ project.preview_title | default: project.name }}</h4>
+                    <span class="project-card-link">{{ project.url | remove: 'https://' | remove: 'http://' | remove:
+                        'www.' | split: '/' | first }}</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- Papers Section (Published & Preprints Combined) -->
+{% if page.papers and page.papers.size > 0 %}
+<section class="content-section">
+    <h2 class="section-title">Research Projects</h2>
+    <div class="timeline">
+        {% for paper in page.papers %}
+        <div class="timeline-item">
+            <div class="timeline-date">{{ paper.year }}</div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <div class="paper-meta">
+                    {% if paper.paper_type == 'published' %}
+                    <span class="paper-journal">{{ paper.journal }}</span>
+                    <span class="badge badge--published">Published</span>
+                    {% elsif paper.paper_type == 'preprint' %}
+                    <span class="paper-journal">{{ paper.status }}</span>
+                    <span class="badge badge--preprint">Preprint</span>
+                    {% endif %}
+                </div>
+                <h3>{{ paper.title }}</h3>
+                <div class="paper-authors">
+                    {% for author in paper.authors %}
+                    {% if author.highlight %}
+                    <strong class="text-primary">{{ author.name }}</strong>
+                    {% else %}
+                    {{ author.name }}
+                    {% endif %}
+                    {% unless forloop.last %}, {% endunless %}
+                    {% endfor %}
+                </div>
+                <div class="paper-content">
+                    {% if paper.abstract %}
+                    <div class="paper-abstract-container">
+                        <p
+                            class="{% if paper.award %} paper-abstract-award {% else %} paper-abstract {% endif %} paper-abstract-collapsed">
+                            {{ paper.abstract }}
+                        </p>
+                        <button class="abstract-toggle" aria-expanded="false">Show more</button>
+                    </div>
+                    {% endif %}
+                    {% if paper.award %}
+                    <strong>Award:</strong>
+                    {% if paper.award.url %}
+                    <a href="{{ paper.award.url }}" class="link">{{ paper.award.title }}</a>
+                    {% else %}
+                    {{ paper.award.title }}
+                    {% endif %}
+                    {% if paper.award.description %} - {{ paper.award.description }}{% endif %}
+                    {% endif %}
+                </div>
+                {% if paper.links and paper.links.size > 0 %}
+                <div class="paper-links">
+                    {% for link in paper.links %}
+                    <a href="{{ link.url }}" class="btn">{{ link.text }}</a>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+<!-- Custom Content -->
+{% if content and content != empty %}
+<section class="content-section">
+    {{ content }}
+</section>
+{% endif %}
+
+<!-- Last Updated -->
+{% if page.last_updated %}
+<div class="last-updated">
+    Last update {{ page.last_updated }}
+</div>
+{% endif %}

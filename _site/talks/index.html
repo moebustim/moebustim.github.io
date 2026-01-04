@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<!-- 
+This template is licensed under MIT License
+Personal content is copyrighted and requires permission to use
+-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Talks | Tim Möbus</title>
+  <meta name="description"
+    content="">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="http://localhost:4000/talks/">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/favicon-512x512.png">
+
+  <!-- MathJax Configuration -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+  <div class="layout-wrapper">
+    <!-- Sidebar -->
+    <aside class="sidebar" role="complementary">
+      <div class="sidebar-content">
+        <!-- Profile Section -->
+        <div class="profile">
+          <div class="profile-image">
+            <img src="/assets/images/profile.png" alt="Tim Möbus profile picture"
+              loading="lazy">
+          </div>
+        </div>
+
+        <!-- Text Content Container -->
+        <div class="sidebar-text-content">
+          <h1 class="profile-name">Tim Möbus</h1>
+          <p class="profile-bio">QuantEra postdoctoral researcher
+Quantum Information Theory
+University of Cambridge</p>
+
+          <!-- Social Links -->
+          <div class="social-links" role="navigation" aria-label="Social media links">
+            
+            <a href="#" onclick="sendEmail()" aria-label="Email contact">@Email</a>
+            <script>
+              function sendEmail() {
+                const user = 'moebustim';
+                const domain = 'gmail.com';
+                window.location.href = 'mailto:' + user + '@' + domain;
+              }
+            </script>
+            
+            
+            <a href="https://orcid.org/0000-0003-0471-2745" aria-label="ORCID profile">ORCID</a>
+            
+            
+            <a href="https://linkedin.com/in/mittim-moebus" aria-label="LinkedIn profile">LinkedIn</a>
+            
+            
+            <a href="https://github.com/MitTimM" aria-label="GitHub profile">GitHub</a>
+            
+          </div>
+
+          <!-- Navigation -->
+          <nav class="sidebar-nav" role="navigation" aria-label="Main navigation">
+            <a href="/" class="" >
+              Home
+            </a>
+            <a href="/projects/" class=""
+              >
+              Projects
+            </a>
+            <a href="/cv/" class="" >
+              CV
+            </a>
+            <a href="/talks/" class="active" aria-current="page" >
+              Talks
+            </a>
+          </nav>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Container -->
+    <div class="content-container">
+      <!-- Main Content -->
+      <main class="main-content" id="main-content" role="main">
+        <div class="content-width">
+          <header class="page-header">
+    <h1 class="page-title">Talks</h1>
+    
+    This page presents a selected list of talks I have given in recent years. Similar talks are summarized in a single entry for readability.
+    
+</header>
+
+<!-- Talk section -->
+
+<div class="list">
+    
+    <article class="list-item">
+        <h2 class="list-title">Heisenberg-limited Hamiltonian learning CV systems</h2>
+        <div class="list-meta">
+            
+            
+            <a href="https://qip2026.lu.lv/" target="_blank" rel="noopener noreferrer">QIP 2026</a>
+            
+             • 
+            
+            
+            
+            Riga
+            
+             • 
+            
+            
+            
+            01.26
+            
+            
+            
+            
+            
+            &nbsp;|&nbsp;
+            
+            
+            
+            CQIF Group Meeting
+            
+             • 
+            
+            
+            
+            Cambridge
+            
+             • 
+            
+            
+            
+            10.25
+            
+            
+            
+            
+            
+            &nbsp;|&nbsp;
+            
+            
+            
+            <a href="https://sites.google.com/view/qmath16/home" target="_blank" rel="noopener noreferrer">QMATH16</a>
+            
+             • 
+            
+            
+            
+            Munich
+            
+             • 
+            
+            
+            
+            09.25
+            
+            
+            
+            
+        </div>
+        <div class="list-description">
+            These talks addressed the fundamental task in quantum learning theory of identifying the Hamiltonian governing a quantum time evolution. Previous research has focused on discrete quantum spin systems, while comparatively little is known about continuous‑variable systems. Focusing on the latter, infinite‑dimensional Hilbert spaces and unbounded operators introduce significant technical challenges. We introduce an analytic framework to study the effects of strong dissipation in such systems, enabling a rigorous analysis of cat‑qubit stabilization via engineered dissipation. Building on this, we develop Heisenberg‑limited algorithms for learning general bosonic Hamiltonians with higher‑order terms in the creation and annihilation operators. Our approach ensures efficient scaling with both the number of modes and the precision of the reconstructed coefficients. Additionally, we derive a new adiabatic approximation for Lindbladian evolutions and explore potential experimental implementations.
+        </div>
+        
+        
+    </article>
+    
+    <article class="list-item">
+        <h2 class="list-title">Dissipation-enabled bosonic Hamiltonian learning via new information-propagation bounds</h2>
+        <div class="list-meta">
+            
+            
+            <a href="https://groups.oist.jp/ocqt/event/conference-theory-quantum-computation-communication-and-cryptography-tqc2024" target="_blank" rel="noopener noreferrer">TQC 2024</a>
+            
+             • 
+            
+            
+            
+            Okinawa
+            
+             • 
+            
+            
+            
+            09.24
+            
+            
+            
+            
+            
+            &nbsp;|&nbsp;
+            
+            
+            
+            <a href="https://qmath.ku.dk/events/quantum-learning-theory/" target="_blank" rel="noopener noreferrer">QMATH Masterclass</a>
+            
+             • 
+            
+            
+            
+            Copenhagen
+            
+             • 
+            
+            
+            
+            08.23
+            
+            
+            
+            
+        </div>
+        <div class="list-description">
+            Reliable quantum technologies require understanding the dynamics of the underlying system, a task known as Hamiltonian learning. While well studied for multi‑qubit systems, learning guarantees for bosonic dynamics remain largely unexplored. For m-mode Hamiltonians given as polynomials in creation and annihilation operators, we establish a simple moment criterion—formulated via the particle‑number operator—that allows finite‑dimensional learning strategies to extend to the bosonic setting using only coherent states and heterodyne detection. We further introduce a dissipation‑assisted procedure that succeeds even when this criterion is violated, learning all Hamiltonian coefficients to accuracy $\varepsilon$  in total evolution time $\mathcal{O}(\varepsilon ^{-2}\log m)$. The protocol uses experimentally accessible ingredients such as projected coherent states, photon‑driven dissipative regularization inspired by cat‑qubit stabilization, and heterodyne measurements. A key technical contribution is a new bosonic Lieb–Robinson‑type bound for Hamiltonians of bounded degree combined with driven dissipation. Overall, our results show that a broad class of bosonic Hamiltonians can be efficiently learned from simple continuous‑variable experiments.
+        </div>
+        
+        <div class="talk-video">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/XnyQFTr7pqE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        
+        
+    </article>
+    
+    <article class="list-item">
+        <h2 class="list-title">Energy preserving evolutions of Bosonic systems</h2>
+        <div class="list-meta">
+            
+            
+            <a href="https://qmath.ku.dk/events/quantum-lunch/?event_type=&fromdate=20.11.2023&todate=04.01.2027&year_month=" target="_blank" rel="noopener noreferrer">QMATH QLunch Seminar</a>
+            
+             • 
+            
+            
+            
+            Copenhagen
+            
+             • 
+            
+            
+            
+            11.23
+            
+            
+            
+            
+        </div>
+        <div class="list-description">
+            The exponential convergence to invariant subspaces of quantum Markov semigroups plays a crucial role in quantum information theory. One such example is in bosonic error correction schemes, where dissipation is used to drive states back to the codespace - an invariant subspace protected against certain types of errors. In this paper, we investigate perturbations of quantum dynamical semigroups that operate on continuous variable (CV) systems and admit an invariant subspace. First, we prove a generation theorem for quantum Markov semigroups on CV systems under the physical assumptions that (i) the generator has GKSL form with corresponding jump operators defined as polynomials of annihilation and creation operators; and (ii) the (possibly unbounded) generator increases all moments in a controlled manner. Additionally, we show that the level sets of operators with bounded first moments are admissible subspaces of the evolution, providing the foundations for a perturbative analysis. Our results also extend to time-dependent semigroups. We apply our general framework to two settings of interest in continuous variables quantum information processing. First, we provide a new scheme for deriving continuity bounds on the energy-constrained capacities of Markovian perturbations of Quantum dynamical semigroups. Second, we provide a quantitative analysis of the dampening of continuous-time evolutions generating a universal gate set for cat-qubits outside their code-space.
+        </div>
+        
+        
+    </article>
+    
+    <article class="list-item">
+        <h2 class="list-title">Fermionic Entropic Inequalities</h2>
+        <div class="list-meta">
+            
+            
+            <a href="https://sites.google.com/view/beyondiid11" target="_blank" rel="noopener noreferrer">BIID in Information Theory 11</a>
+            
+             • 
+            
+            
+            
+            Tübingen
+            
+             • 
+            
+            
+            
+            07.23
+            
+            
+            
+            
+        </div>
+        <div class="list-description">
+            Entropic inequalities play an important role in the establishment of the optimal transmission rates of classical and quantum information. Motivated by the key role of the constrained minimum output entropy in the study of the capacity region of bonsonic Gaussian broadcast channel, we study similar inequalities in the Fermionic case. In this paper, we prove the fermionic, multi-mode version of the Entropy Power Inequality, the Entropy Photon-Number Inequality, constrained minimum output entropy, and Young's inequality for even Gaussian input states satisfying the parity super selection rule. We also prove hypercontractivity for states satisfying the SSR given that the 2-log-Sobolev constant is known in 1-mode. Finally, we establish the generalized subadditivity of the conditional entropy, and gradient estimate of even Gaussian channels on fermionic systems.
+        </div>
+        
+        
+    </article>
+    
+    <article class="list-item">
+        <h2 class="list-title">Optimal convergence rate in the quantum Zeno effect for open quantum systems in infinite dimensions</h2>
+        <div class="list-meta">
+            
+            
+            <a href="https://www.math.ucdavis.edu/~qmath/" target="_blank" rel="noopener noreferrer">QMATH 15</a>
+            
+             • 
+            
+            
+            
+            Davis
+            
+             • 
+            
+            
+            
+            09.22
+            
+            
+            
+            
+            
+            &nbsp;|&nbsp;
+            
+            
+            
+            <a href="https://collab.dvb.bayern/spaces/TUMqimp20/pages/67808645/IAMP+%E2%80%93+EMS+Summer+School+in+Mathematical+Physics+2022" target="_blank" rel="noopener noreferrer">IAMP Summer School</a>
+            
+             • 
+            
+            
+            
+            Munich
+            
+             • 
+            
+            
+            
+            09.22
+            
+            
+            
+            
+            
+            &nbsp;|&nbsp;
+            
+            
+            
+            <a href="https://www.quantum-alliance.de/news-and-events/events/phd-conference-2022.html" target="_blank" rel="noopener noreferrer">Quantum Alliance PhD Conference</a>
+            
+             • 
+            
+            
+            
+            Munich
+            
+             • 
+            
+            
+            
+            04.22
+            
+            
+            
+            
+            
+            &nbsp;|&nbsp;
+            
+            
+            
+            <a href="https://www.dpg-physik.de/aktivitaeten-und-programme/tagungen/fruehjahrstagungen/2022" target="_blank" rel="noopener noreferrer">DPG Meeting 2022</a>
+            
+             • 
+            
+            
+            
+            Regensburg
+            
+             • 
+            
+            
+            
+            02.22
+            
+            
+            
+            
+        </div>
+        <div class="list-description">
+            In open quantum systems, the quantum Zeno effect consists in frequent applications of a given quantum operation, e.g. a measurement, used to restrict the time evolution (due e.g. to decoherence) to states that are invariant under the quantum operation. In an abstract setting, the Zeno sequence is an alternating concatenation of a contraction operator (quantum operation) and a $C_0$-contraction semigroup (time evolution) on a Banach space. In this paper, we prove the optimal convergence rate of order $1/n$of the Zeno sequence by proving explicit error bounds. For that, we derive a new Chernoff-type $\sqrt{n}$-Lemma, which we believe to be of independent interest. Moreover, we generalize the convergence result for the Zeno effect in two directions: We weaken the assumptions on the generator, inducing the Zeno dynamics generated by an unbounded generator and we improve the convergence to the uniform topology. Finally, we provide a large class of examples arising from our assumptions.
+        </div>
+        
+        
+    </article>
+    
+</div>
+
+
+<!-- Custom Content -->
+
+<section class="content-section">
+    
+
+</section>
+
+
+<!-- Last Updated -->
+
+<div class="last-updated">
+    Last update January 2026
+</div>
+
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="site-footer" role="contentinfo">
+        <div class="footer-content">
+          <p>
+            © 2026 Tim Möbus.
+            Built with <a href="https://jekyllrb.com/">Jekyll</a>,
+            hosted on <a href="https://pages.github.com/">GitHub Pages</a>
+            and inspired by <a href="https://paul-the-wizord.github.io">Paul Gondolf</a>.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // Handle collapsible abstract items
+    document.addEventListener('DOMContentLoaded', function () {
+      const abstractToggles = document.querySelectorAll('.abstract-toggle');
+
+      abstractToggles.forEach(button => {
+        button.addEventListener('click', function (e) {
+          e.preventDefault();
+          const abstractParagraph = this.previousElementSibling;
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+          abstractParagraph.classList.toggle('expanded', !isExpanded);
+          this.setAttribute('aria-expanded', !isExpanded);
+          this.textContent = isExpanded ? 'Show more' : 'Show less';
+        });
+      });
+
+      // Handle collapsible CV detail items
+      const cvDetailToggles = document.querySelectorAll('.cv-detail-toggle');
+
+      cvDetailToggles.forEach(button => {
+        const detailText = button.previousElementSibling;
+
+        // Check if text is truncated
+        const isTruncated = detailText.scrollHeight > detailText.clientHeight;
+
+        if (isTruncated) {
+          button.classList.add('visible');
+        }
+
+        button.addEventListener('click', function (e) {
+          e.preventDefault();
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+          detailText.classList.toggle('expanded', !isExpanded);
+          this.setAttribute('aria-expanded', !isExpanded);
+          this.textContent = isExpanded ? 'Show more' : 'Show less';
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
