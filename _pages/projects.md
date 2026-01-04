@@ -24,7 +24,7 @@ papers:
   # Last updated: 3 December, 2025
   - title: "Instantaneous Sobolev Regularization for Dissipative Bosonic Dynamics"
     paper_type: preprint
-    status: "V2 comming soon"
+    status: "V2 coming soon"
     year: 2025
     authors:
       - name: "Pablo Costa Rico"
@@ -41,7 +41,7 @@ papers:
   # Last updated: 9 October, 2025
   - title: "Learning and certification of local time-dependent quantum dynamics and noise"
     paper_type: preprint
-    status: "Numerics comming soon"
+    status: "Numerics coming soon"
     year: 2025
     authors:
       - name: "Daniel Stilck França"
@@ -59,7 +59,7 @@ papers:
   # Last updated: 9 October, 2025
   - title: "Learning Coulomb Potentials and Beyond with Fermions in Continuous Space"
     paper_type: preprint
-    status: "V2 comming soon, poster at QIP 2026"
+    status: "V2 coming soon, poster at QIP 2026"
     year: 2025
     authors:
       - name: "Andreas Bluhm"
@@ -205,7 +205,7 @@ papers:
   # Last updated: 27 Jul, 2023
   - title: "Dissipation-enabled bosonic Hamiltonian learning via new information-propagation bounds"
     paper_type: preprint
-    status: "Generalization comming soon"
+    status: "Generalization coming soon"
     year: 2023
     authors:
       - name: "Tim Möbus"
