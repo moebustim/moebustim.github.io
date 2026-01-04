@@ -16,7 +16,7 @@ numerical_simulations:
   - url: "https://zenodo.org/records/16567053"
     preview_title: "Simulation of Long-Range Gibbs States"
     preview_image: "/assets/images/gibbs-simulation.png"
-  - url: "https://example.com/project4"
+  - url: "https://github.com/moebustim/moebustim.github.io"
     preview_title: "My Personal Website"
     preview_image: "/assets/images/my-website.png"
 
