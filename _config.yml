@@ -5,7 +5,7 @@ description: |-
   Quantum Information Theory
   University of Cambridge
 baseurl: ""
-url: "https://timmoebus.github.io" # the base hostname & protocol for your site
+url: "https://moebustim.github.io" # the base hostname & protocol for your site
 
 # Social media usernames (without @ symbol)
 github_username: moebustim
