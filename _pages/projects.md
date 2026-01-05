@@ -17,7 +17,7 @@ numerical_simulations:
     preview_title: "Simulation of Long-Range Gibbs States"
     preview_image: "/assets/images/gibbs-simulation.png"
   - url: "https://github.com/moebustim/moebustim.github.io"
-    preview_title: "My Personal Website"
+    preview_title: "My Website Theme"
     preview_image: "/assets/images/my-website.png"
 
 papers:
