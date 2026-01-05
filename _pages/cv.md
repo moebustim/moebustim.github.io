@@ -56,7 +56,7 @@ employment:
       - label: Period
         text: "10.2025 - present"
       - label: Funding
-        text: "DFG Grant “Initiation of International Collaboration” with the topic “Stability of Local Expectation in the Thermal Limit”, SFB TRR 352, and QuantEra TouQan (DFG)"
+        text: "<a href=\"https://fit.uni-tuebingen.de/Project/Details?id=13333\">DFG Grant \"Initiation of International Collaboration\" with the topic \"Stability of Local Expectation in the Thermal Limit\"</a>, <a href=\"https://www.trr352.de/\">SFB TRR 352</a>, and <a href=\"https://quantera.eu/touqan/\">QuantEra TouQan (DFG)</a>"
 
   - date: "present"
     title: Research Associate (Postdoctoral Researcher)
@@ -67,7 +67,7 @@ employment:
       - label: Period
         text: "05.2024 - present"
       - label: Funding
-        text: "DFG Grant “Initiation of International Collaboration” with the topic “Stability of Local Expectation in the Thermal Limit”, SFB TRR 352, and QuantEra TouQan (DFG)"
+        text: "<a href=\"https://fit.uni-tuebingen.de/Project/Details?id=13333\">DFG Grant \"Initiation of International Collaboration\" with the topic \"Stability of Local Expectation in the Thermal Limit\"</a>, <a href=\"https://www.trr352.de/\">SFB TRR 352</a>, and <a href=\"https://quantera.eu/touqan/\">QuantEra TouQan (DFG)</a>"
     
   - date: "2024"
     title: Research Associate (Doctoral Researcher)
@@ -78,7 +78,7 @@ employment:
       - label: Period
         text: "09.2020 - 03.2024"
       - label: Funding
-        text: "SFB TRR 352 and MCQST"
+        text: "<a href=\"https://www.trr352.de/\">SFB TRR 352</a> and <a href=\"https://www.mcqst.de/\">MCQST</a>"
 
   - date: "2017"
     title: Big Data Developer (Internship)
