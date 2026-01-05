@@ -14,6 +14,21 @@ Personal content is copyrighted and requires permission to use
   <meta name="description"
     content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  <!-- SEO Meta Tags -->
+  <meta name="author" content="{{ site.title }}">
+  <meta name="keywords" content="quantum information, physics researcher, postdoc, Cambridge">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <!-- Open Graph / Social Media Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+  <meta property="og:description"
+    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.image %}
+  <meta property="og:image" content="{{ page.image | absolute_url }}">{% endif %}
+
   <!-- Canonical URL -->
   <link rel="canonical" href="{{ page.url | absolute_url }}">
 
