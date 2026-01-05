@@ -8,9 +8,9 @@ baseurl: ""
 url: "https://timmoebus.github.io" # the base hostname & protocol for your site
 
 # Social media usernames (without @ symbol)
-github_username: MitTimM
+github_username: moebustim
 orcid_id: 0000-0003-0471-2745
-linkedin_username: mittim-moebus
+linkedin_username: moebustim
 email_user: moebustim
 email_domain: gmail.com
 
