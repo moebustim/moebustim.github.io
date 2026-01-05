@@ -1236,7 +1236,7 @@ pre code {
     }
 
     .profile-image {
-        width: 50px;
+        width: 48.5%;
         height: auto;
         aspect-ratio: 340 / 240;
     }
