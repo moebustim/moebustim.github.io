@@ -58,7 +58,7 @@ employment:
       - label: Funding
         text: "DFG Grant “Initiation of International Collaboration” with the topic “Stability of Local Expectation in the Thermal Limit”, SFB TRR 352, and QuantEra TouQan (DFG)"
 
-  - date: "2026"
+  - date: "present"
     title: Research Associate (Postdoctoral Researcher)
     institution: University of Tübingen
     institution_url: https://www.math.uni-tuebingen.de/en/research-chairs/maphy
