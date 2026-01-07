@@ -1230,6 +1230,15 @@ pre code {
         max-width: 100%;
     }
 
+    /* Allow abstracts to expand fully on mobile */
+    .paper-abstract-collapsed.expanded {
+        display: block !important;
+        -webkit-line-clamp: unset !important;
+        line-clamp: unset !important;
+        -webkit-box-orient: initial !important;
+        overflow: visible !important;
+    }
+
     /* Hide decorative timeline elements on small screens */
     .timeline-marker,
     .timeline-item::before {
