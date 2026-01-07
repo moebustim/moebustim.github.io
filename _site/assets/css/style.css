@@ -921,7 +921,7 @@ pre code {
     max-width: 100%;
     word-wrap: break-word;
     line-height: 1.5;
-    max-height: calc(1.5em * 2 + 0.5em);
+    max-height: 3em;
 }
 
 .paper-abstract-collapsed.expanded {
@@ -1236,7 +1236,7 @@ pre code {
         -webkit-box-orient: vertical !important;
         overflow: hidden !important;
         max-width: 100%;
-        max-height: calc(1.5em * 2 + 0.5em) !important;
+        max-height: 3em !important;
         line-height: 1.5 !important;
     }
 
