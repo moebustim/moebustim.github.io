@@ -920,14 +920,22 @@ pre code {
     margin: 0;
     max-width: 100%;
     word-wrap: break-word;
+    line-height: 1.5;
+    max-height: calc(1.5em * 2 + 0.5em);
 }
 
 .paper-abstract-collapsed.expanded {
-    display: block;
-    -webkit-line-clamp: unset;
-    line-clamp: unset;
+    display: block !important;
+    -webkit-box: none !important;
+    -webkit-line-clamp: none !important;
+    line-clamp: none !important;
+    -webkit-box-orient: unset !important;
+    overflow: visible !important;
     flex: 100%;
     margin-bottom: var(--space-sm);
+    white-space: normal !important;
+    max-height: none !important;
+    height: auto !important;
 }
 
 .paper-abstract-collapsed.expanded~.abstract-toggle {
@@ -1228,15 +1236,21 @@ pre code {
         -webkit-box-orient: vertical !important;
         overflow: hidden !important;
         max-width: 100%;
+        max-height: calc(1.5em * 2 + 0.5em) !important;
+        line-height: 1.5 !important;
     }
 
     /* Allow abstracts to expand fully on mobile */
     .paper-abstract-collapsed.expanded {
         display: block !important;
-        -webkit-line-clamp: unset !important;
-        line-clamp: unset !important;
-        -webkit-box-orient: initial !important;
+        -webkit-box: none !important;
+        -webkit-line-clamp: none !important;
+        line-clamp: none !important;
+        -webkit-box-orient: unset !important;
         overflow: visible !important;
+        white-space: normal !important;
+        max-height: none !important;
+        height: auto !important;
     }
 
     /* Hide decorative timeline elements on small screens */
