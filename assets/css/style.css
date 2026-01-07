@@ -918,6 +918,8 @@ pre code {
     -webkit-box-orient: vertical;
     overflow: hidden;
     margin: 0;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 .paper-abstract-collapsed.expanded {
@@ -1216,6 +1218,16 @@ pre code {
         width: 48.5%;
         height: auto;
         aspect-ratio: 340 / 240;
+    }
+
+    /* Ensure abstracts are properly truncated on mobile */
+    .paper-abstract-collapsed {
+        display: -webkit-box !important;
+        -webkit-line-clamp: 2 !important;
+        line-clamp: 2 !important;
+        -webkit-box-orient: vertical !important;
+        overflow: hidden !important;
+        max-width: 100%;
     }
 
     /* Hide decorative timeline elements on small screens */
