@@ -17,6 +17,11 @@ talks:
 
     - title: "Heisenberg-limited Hamiltonian learning CV systems"
       meta:
+        - text: "QunatEra-Touqan Workshop"
+          url: "https://quantera-touqan.github.io/posts/annual-meeting-for-quantera-project-touqan-in-lyon.html#annual-meeting-for-quantera-project-touqan-in-lyon"
+        - "Lyon"
+        - "02.26"
+        - "|"
         - text: "QIP 2026"
           url: "https://qip2026.lu.lv/"
         - "Riga"

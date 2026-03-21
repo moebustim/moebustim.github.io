@@ -91,6 +91,8 @@ employment:
         text: "Tutored stochastic for computer science students (2022), co-designed and delivered Mathematical Physics Master's program precourse (2022), tutored probability theory course for mathematicians (2023), led Analysis II tutorials and repetitorial (2024)"
 
 teaching:
+  - "Co-supervision (with Angela Capel) of a Master's student at the University of Cambridge (Jan 2026 - present)"
+  - "Co-supervision (with Angela Capel) of a PhD student at the University of Cambridge (Oct 2025 - present)"
   - "Invited Speaker for QMATH-Masterclass on Quantum Learning Theory at the University of Copenhagen (2023)"
   - "Course Lead for Quantum Statistical Inference at the Technical University of Munich (S2022)"
   - "Teaching Assistant for Advanced Lab Course — FOPRA at the Technical University of Munich (S2022)"
