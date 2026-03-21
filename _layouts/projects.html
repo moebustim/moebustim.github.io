@@ -19,7 +19,7 @@ layout: default
             <a href="{{ project.url }}" class="project-card" target="_blank" rel="noopener noreferrer">
                 {% if project.preview_image %}
                 <div class="project-card-image">
-                    <img src="{{ project.preview_image }}" alt="{{ project.name }}">
+                    <img src="{{ project.preview_image }}" alt="{{ project.preview_title | default: project.name }}">
                 </div>
                 {% endif %}
                 <div class="project-card-content">

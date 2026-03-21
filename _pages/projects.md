@@ -2,6 +2,7 @@
 layout: projects
 title: Projects
 permalink: /projects/
+math: true
 description: This page first presents a selection of public coding projects, followed by my related research projects in quantum information theory and mathematical physics.
 last_updated: January 2026
 
@@ -17,8 +18,11 @@ numerical_simulations:
     preview_title: "Simulation of Long-Range Gibbs States"
     preview_image: "/assets/images/gibbs-simulation.png"
   - url: "https://github.com/moebustim/moebustim.github.io"
-    preview_title: "Website Theme"
+    preview_title: "Personal Website Theme"
     preview_image: "/assets/images/my-website.png"
+  - url: "https://github.com/quantera-touqan/quantera-touqan.github.io"
+    preview_title: "Host QuantEra TouQan Website"
+    preview_image: "/assets/images/quntera-touqan-website.png"
 
 papers:
   # Last updated: 3 December, 2025
@@ -78,17 +82,19 @@ papers:
 
   # Last updated: 8 September, 2025
   - title: "Stability of thermal equilibrium in long-range quantum systems"
-    paper_type: preprint
-    status: "Publication in journal soon"
-    year: 2025
+    paper_type: published
+    journal: Physical Review Research
+    year: 2026
     authors:
       - name: "Tim Möbus"
         highlight: true
       - name: "Jorge Sánchez-Segovia"
       - name: "Álvaro M. Alhambra"
       - name: "Ángela Capel"
-    abstract: "Experimental realizations of spin models are irremediably prone to errors, which can propagate through the system corrupting experimental signals. We study how such errors affect the measurement of local observables in systems with long-range interactions, where perturbations can spread more rapidly. Specifically, we focus on the stability of thermal equilibrium and investigate its relation to the correlation structure of the system, both analytically and numerically. As a main result, we prove that the stability of local expectation values follows from the decay of correlations on the Gibbs state and the Lieb-Robinson bound, and hence that stability always holds at high temperature. We also provide numerical evidence that this stability extends to an even larger regime of interacting long-range systems. Our results support the robustness of analogue simulation platforms for long-range models, and provide further evidence that computing physical quantities of interest can be significantly easier than performing arbitrary quantum computations. "
+    abstract: "Experimental realizations of spin models are irremediably prone to errors, which can propagate through the system corrupting experimental signals. We study how such errors affect the measurement of local observables in systems with long-range interactions, where perturbations can spread more rapidly. Specifically, we focus on the stability of thermal equilibrium and investigate its relation to the correlation structure of the system, both analytically and numerically. As a main result, we prove that the stability of local expectation values follows from the decay of correlations on the Gibbs state and the Lieb-Robinson bound. We also provide numerical evidence that this stability extends to an even larger regime of interacting long-range systems. Our results support the robustness of analog simulation platforms for long-range models and provide further evidence that computing physical quantities of interest can be significantly easier than performing arbitrary quantum computations."
     links:
+      - text: "DOI"
+        url: "https://doi.org/10.1103/3wbz-lq3p"
       - text: "arXiv:2506.16451"
         url: "https://arxiv.org/abs/2506.16451"
       - text: "PDF"
@@ -158,10 +164,10 @@ papers:
       - name: "Cambyse Rouzé"
     abstract: "The exponential convergence to invariant subspaces of quantum Markov semigroups plays a crucial role in quantum information theory. In this paper, we investigate perturbations of quantum dynamical semigroups operating on continuous variable (CV) systems that admit an invariant subspace. To establish this analysis on mathematically sound foundations, we first prove a generation theorem for quantum Markov semigroups on CV systems under physically motivated assumptions about the generator structure."
     links:
-      - text: "arXiv:2307.13801"
-        url: "https://arxiv.org/abs/2307.13801"
       - text: "DOI"
         url: "https://doi.org/10.22331/q-2024-12-04-1551"
+      - text: "arXiv:2307.13801"
+        url: "https://arxiv.org/abs/2307.13801"
       - text: "PDF"
         url: "https://arxiv.org/pdf/2307.13801.pdf"
 
@@ -178,10 +184,10 @@ papers:
         highlight: true
     abstract: "In this work, we prove uniform continuity bounds for entropic quantities related to the sandwiched Rényi divergences such as the sandwiched Rényi conditional entropy. We follow three different approaches: The first one exploits the sub-/superadditivity and joint concavity/convexity of the exponential of the divergence while the second uses norm-like properties of a power of the exponential inspired by norms on interpolation spaces. The third approach mixes the former two to achiev favourable scaling in all parameter regimes."
     links:
-      - text: "arXiv:2308.12425"
-        url: "https://arxiv.org/abs/2308.12425"
       - text: "DOI"
         url: "https://doi.org/10.1007/s00023-024-01519-x"
+      - text: "arXiv:2308.12425"
+        url: "https://arxiv.org/abs/2308.12425"
       - text: "PDF"
         url: "https://arxiv.org/pdf/2308.12425.pdf"
 
@@ -195,10 +201,10 @@ papers:
         highlight: true
     abstract: "The Trotter product formula and the quantum Zeno effect are both indispensable tools for constructing time-evolutions using experimentally feasible building blocks. In this work, we discuss assumptions under which quantitative bounds can be proven in the strong operator topology on Banach spaces and provide natural bosonic examples. Specially, we assume the existence of a continuously embedded Banach space, which relatively bounds the involved generators and creates an invariant subspace of the limiting semigroup with a stable restriction. The slightly stronger assumption of admissible subspaces is well-recognized in the realm of hyperbolic evolution systems (time-dependent semigroups), to which the results are extended. By assuming access to a hierarchy of continuously embedded Banach spaces, Suzuki-higher-order bounds can be demonstrated. In bosonic applications, these embedded Banach spaces naturally arise through the number operator, leading to a diverse set of examples encompassing notable instances such as the Ornstein-Uhlenbeck semigroup and multi-photon driven dissipation used in bosonic error correction."
     links:
-      - text: "arXiv:2404.01422"
-        url: "https://arxiv.org/abs/2404.01422"
       - text: "DOI"
         url: "https://doi.org/10.22331/q-2024-07-25-1424"
+      - text: "arXiv:2404.01422"
+        url: "https://arxiv.org/abs/2404.01422"
       - text: "PDF"
         url: "https://arxiv.org/pdf/2404.01422" 
 
@@ -232,10 +238,10 @@ papers:
       - name: "Cambyse Rouzé"
     abstract: "In open quantum systems, the quantum Zeno effect consists in frequent applications of a given quantum operation, e.g.~a measurement, used to restrict the time evolution (due e.g.~to decoherence) to states that are invariant under the quantum operation. In an abstract setting, the Zeno sequence is an alternating concatenation of a contraction operator (quantum operation) and a C_0-contraction semigroup (time evolution) on a Banach space. In this paper, we prove the optimal convergence rate of order $\\tfrac{1}{n}$ of the Zeno sequence by proving explicit error bounds. For that, we derive a new Chernoff-type $\\sqrt{n}$-Lemma, which we believe to be of independent interest. Moreover, we generalize the convergence result for the Zeno effect in two directions: We weaken the assumptions on the generator, inducing the Zeno dynamics generated by an unbounded generator and we improve the convergence to the uniform topology. Finally, we provide a large class of examples arising from our assumptions."
     links:
-      - text: "arXiv:2111.13911"
-        url: "https://arxiv.org/abs/2111.13911"
       - text: "DOI"
         url: "https://doi.org/10.1007/s00023-022-01241-6"
+      - text: "arXiv:2111.13911"
+        url: "https://arxiv.org/abs/2111.13911"
       - text: "PDF"
         url: "https://arxiv.org/pdf/2111.13911" 
 
@@ -250,10 +256,10 @@ papers:
       - name: "Michael M. Wolf"
     abstract: "The quantum Zeno effect, in its original form, uses frequent projective measurements to freeze the evolution of a quantum system that is initially governed by a fixed Hamiltonian. We generalize this effect simultaneously in three directions by allowing open system dynamics, time-dependent evolution equations and general quantum operations in place of projective measurements. More precisely, we study Markovian master equations with bounded generators whose time dependence is Lipschitz continuous. Under a spectral gap condition on the quantum operation, we show how frequent measurements again freeze the evolution outside an invariant subspace. Inside this space the evolution is described by a modified master equation. "
     links:
-      - text: "arXiv:1901.09393"
-        url: "https://arxiv.org/abs/1901.09393"
       - text: "DOI"
         url: "https://doi.org/10.1063/1.509091"
+      - text: "arXiv:1901.09393"
+        url: "https://arxiv.org/abs/1901.09393"
       - text: "PDF"
         url: "https://arxiv.org/pdf/1901.09393" 
 ---

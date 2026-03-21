@@ -2,10 +2,19 @@
 layout: talks
 title: Talks
 permalink: /talks/
-last_updated: January 2026
+math: true
+last_updated: March 2026
 description: This page presents a selected list of talks I have given in recent years. Similar talks are summarized in a single entry for readability.
 
 talks:
+    - title: "Learning and certification of local time-dependent quantum dynamics and noise"
+      meta:
+        - text: "Spring 2026 HQI Synergy Day"
+          url: "https://h-oll.github.io/20260311T000000--spring-2026-hqi-synergy-day.html#ID-58e5f7a4-15aa-4a1d-99ed-0f28843a00d6"
+        - "Paris"
+        - "03.26"
+      description: "This talk addressed the fundamental task in quantum benchmarking of identifying the time-dependent generators governing a quantum evolution. Previous research has focused on time-independent systems, while rigorous protocols for learning time-varying Hamiltonians and Lindbladians remain scarce despite their widespread applications. Focusing on the latter, we introduce a scalable framework to learn the evolution of locally interacting n-qubit systems while assuming minimal control over the time-evolution itself. Our approach operates at the standard quantum limit, ensuring efficient polynomial scaling with the system dimension through an interpolation-based framework for parameters in known functional spaces. By combining Lieb-Robinson bounds, process shadows, and semidefinite programming, we estimate parameters at finite times without requiring infinitesimal control. Additionally, we extend state-of-the-art Lieb-Robinson bounds to the time-dependent, dissipative setting and explore applications in verifying adiabatic preparation and Markovian noise."
+
     - title: "Heisenberg-limited Hamiltonian learning CV systems"
       meta:
         - text: "QIP 2026"
