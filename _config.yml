@@ -1,7 +1,7 @@
 # Site settings
 title: "Tim Möbus"
 description: |-
-  <a href="https://quantera-touqan.github.io/pages/team.html">QuantEra postdoctoral researcher</a>
+  <a href="https://quantera-touqan.github.io/pages/team.html" class="no-color-link">QuantEra postdoctoral researcher</a>
   Quantum Information Theory
   University of Cambridge
 baseurl: ""
