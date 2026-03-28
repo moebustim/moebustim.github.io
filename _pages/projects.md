@@ -35,7 +35,7 @@ papers:
       - name: "Paul Gondolf"
       - name: "Tim Möbus"
         highlight: true
-    abstract: "We investigate quantum Markov semigroups on bosonic Fock space and identify a broad class of infinite-dimensional dissipative evolutions that exhibit instantaneous Sobolev-regularization. Motivated by stability problems in quantum computation, we show that for certain Lindblad operators that are polynomials of creation and annihilation operators, the resulting dynamics immediately transform any initial state into one with finite expectation in all powers of the number operator. A key application is in the bosonic cat code, where we obtain explicit estimates in the trace norm for the speed of convergence. These estimates sharpen existing perturbative bounds at both short and long times, offering new analytic tools for assessing stability and error suppression in bosonic quantum information processing. For example, we improve the strong exponential convergence of the (shifted)  -photon dissipation to its fixed point to the uniform topology. "
+    abstract: "We investigate quantum Markov semigroups on bosonic Fock space and identify a broad class of infinite-dimensional dissipative evolutions that exhibit instantaneous Sobolev-regularization. Motivated by stability problems in quantum computation, we show that for certain Lindblad operators that are polynomials of creation and annihilation operators, the resulting dynamics immediately transform any initial state into one with finite expectation in all powers of the number operator. A key application is in the bosonic cat code, where we obtain explicit estimates in the trace norm for the speed of convergence. These estimates sharpen existing perturbative bounds at both short and long times, offering new analytic tools for assessing stability and error suppression in bosonic quantum information processing. For example, we improve the strong exponential convergence of the (shifted)-photon dissipation to its fixed point to the uniform topology. "
     links:
       - text: "arXiv:2512.04066"
         url: "https://arxiv.org/abs/2512.04066"
@@ -58,12 +58,12 @@ papers:
       - text: "arXiv:2510.08500"
         url: "https://arxiv.org/abs/2510.08500"
       - text: "PDF"
-        url: "https://arxiv.org/pdf/2510.08500"
+        url: "https://arxiv.org/pdf/2510.08471"
 
   # Last updated: 9 October, 2025
-  - title: "Learning Coulomb Potentials and Beyond with Fermions in Continuous Space"
+  - title: "Learning Coulomb Potentials and Beyond with Free Fermions in Continuous Space"
     paper_type: preprint
-    status: "V2 coming soon, poster at QIP 2026"
+    status: "Poster at QIP 2026, submitted to a journal"
     year: 2025
     authors:
       - name: "Andreas Bluhm"
@@ -71,7 +71,7 @@ papers:
       - name: "Tim Möbus"
         highlight: true
       - name: "Oliver Siebert"
-    abstract: "We present a modular algorithm for learning external potentials in continuous-space free-fermion models including Coulomb potentials in any dimension. Compared to the lattice-based approaches, the continuum presents new mathematical challenges: the state space is infinite-dimensional and the Hamiltonian contains the Laplacian, which is unbounded in the continuum and thus produces an unbounded speed of information propagation. Our framework addresses these difficulties through novel optimization methods or information-propagation bounds in combination with a priori regularity assumptions on the external potential. The resulting algorithm provides a unified and robust approach that covers both Coulomb interactions and other classes of physically relevant potentials. One possible application is the characterization of charge and position of nuclei and ions in quantum chemistry. Our results thus lay the foundation for a scalable and generalizable toolkit to explore fermionic systems governed by continuous-space interactions."
+    abstract: "The first-principles formulation of quantum mechanics relevant for quantum chemistry and trapped quantum gases involves particles in the continuous space $\\mathbb{R}^d$. We present a unified framework and modular algorithm for learning external potentials $V$ with free-fermion models in the continuum. Compared to the lattice-based approaches, the continuum presents new mathematical challenges: the state space is infinite-dimensional and the Hamiltonian contains the Laplacian, which is unbounded in the continuum and produces an unbounded speed of information propagation. We address these through novel optimization methods and information-propagation bounds in combination with a priori regularity assumptions on the external potential. The resulting algorithm provides a unified and robust approach to learn parametric interactions (e.g., Coulomb potentials or periodic potentials) and general smooth functions. Our results lay the foundation for a scalable and generalizable toolkit to learn Hamiltonians in continuous space. "
     links:
       - text: "arXiv:2510.08471"
         url: "https://arxiv.org/abs/2510.08471"
@@ -105,7 +105,7 @@ papers:
   # Last updated: 31 May, 2025
   - title: "Heisenberg-limited Hamiltonian learning continuous variable systems via engineered dissipation"
     paper_type: preprint
-    status: "Talk at QIP 2026"
+    status: "Talk at QIP 2026, submitted to a journal"
     year: 2025
     authors:
       - name: "Tim Möbus"
