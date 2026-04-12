@@ -45,7 +45,7 @@ papers:
   # Last updated: 9 October, 2025
   - title: "Learning and certification of local time-dependent quantum dynamics and noise"
     paper_type: preprint
-    status: "Numerics coming soon"
+    status: "Talk at TQC 2026, numerics coming soon"
     year: 2025
     authors:
       - name: "Daniel Stilck França"
