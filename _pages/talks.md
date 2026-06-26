@@ -3,10 +3,17 @@ layout: talks
 title: Talks
 permalink: /talks/
 math: true
-last_updated: March 2026
+last_updated: July 2026
 description: This page presents a selected list of talks I have given in recent years. Similar talks are summarized in a single entry for readability.
 
 talks:
+    - title: "Sobolev Regularization for Dissipative Bosonic Dynamics"
+      meta:
+        - text: "ENS QUANTIC seminar talk"
+        - "Paris"
+        - "05.26"
+      description: "This talk identifies a broad class of bosonic dissipative evolutions that exhibit instantaneous Sobolev regularization. Motivated by stability questions in bosonic quantum computation, we show that certain Lindblad generators given by polynomial functions of creation and annihilation operators immediately drive any initial state into one with finite moments of all orders of the number operator. This yields explicit, uniform trace norm convergence rates in the bosonic cat code as well as error bounds for dissipative Bose–Hubbard models. I will also outline future directions where such Sobolev type moment propagation bounds may play a key role, including information propagation limits in open systems and the learning or verification of bosonic dissipative dynamics."
+
     - title: "Learning and certification of local time-dependent quantum dynamics and noise"
       meta:
         - text: "Spring 2026 HQI Synergy Day"

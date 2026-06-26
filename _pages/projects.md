@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 math: true
 description: This page first presents a selection of public coding projects, followed by my related research projects in quantum information theory and mathematical physics.
-last_updated: January 2026
+last_updated: July 2026
 
 
 numerical_simulations:
@@ -25,6 +25,25 @@ numerical_simulations:
     preview_image: "/assets/images/quntera-touqan-website.png"
 
 papers:
+  # Last updated: 26 July, 2026
+  - title: "Robust Structure Learning of $k$-local Lindbladians"
+    paper_type: preprint
+    status: "Numerics coming soon"
+    year: 2026
+    authors:
+      - name: "Tim Möbus"
+        highlight: true
+      - name: "Thiago Bergamaschi"
+      - name: "Daniel Stilck França"
+      - name: "Cambyse Rouzé"
+    abstract: "We present an efficient protocol for learning an unknown $k$-local Lindblad generator on n qubits using only product-state preparations, short-time evolution, and single-qubit Pauli measurements, without prior knowledge of the interaction structure. For fixed k and bounded weighted interaction strength, the protocol estimates all Hamiltonian and dissipative Pauli--GKSL coefficients to entrywise accuracy $\\varepsilon$ with probability at least $1-\\delta$ using $\\widetilde{\\mathcal O}_k(\\varepsilon^{-2}n^{2k}\\log(1/\\delta))$ samples and polylogarithmically many evolution times. A semidefinite projection converts these estimates into a valid k-local Lindblad generator with diamond-norm error at most $\\varepsilon$ using $\\widetilde{\\mathcal O}_k(\\varepsilon^{-2}n^{4k}\\log(1/\\delta))$ samples and polynomial-time classical postprocessing. If a suitable set of influential coefficients is supplied and satisfies a stable sparsity condition, the dependence on n can improve from polynomial to logarithmic; in particular, exact supports of bounded intersection degree require only $\\widetilde{\\mathcal O}_k(\\varepsilon^{-2}\\log(n/\\delta))$ samples, with analogous reductions in system-size dependence for sufficiently decaying long-range interactions. We also provide a robust structure-learning procedure, extend the guarantees to model misspecification, and prove complementary sample-complexity lower bounds. To our knowledge, these are the first efficient learning guarantees for general k-local dissipative quantum dynamics under such limited experimental control. "
+    links:
+      - text: "arXiv:2606.23652"
+        url: "https://arxiv.org/abs/2606.23652"
+      - text: "PDF"
+        url: "https://arxiv.org/pdf/2606.23652"
+  
+
   # Last updated: 3 December, 2025
   - title: "Instantaneous Sobolev Regularization for Dissipative Bosonic Dynamics"
     paper_type: preprint
@@ -137,15 +156,15 @@ papers:
       - text: "PDF"
         url: "https://mediatum.ub.tum.de/doc/1764923/1764923.pdf" 
 
-  # Last updated: 28 November, 2024
-  - title: "Multi-product Zeno effect with higher order convergence rates"
-    paper_type: preprint
-    status: "Submitted to a journal"
-    year: 2024
+  # Last updated: 26 July, 2026
+  - title: "Multi-product Zeno effect achieving higher order convergence rates"
+    paper_type: published
+    journal: "Quantum"
+    year: 2026
     authors:
       - name: "Tim Möbus"
         highlight: true
-    abstract: "To implement the dynamics of a projected Hamiltonian or Lindbladian, the quantum Zeno effect is a fundamental quantum phenomenon that approximates the effective dynamic by intersecting the Hamiltonian or Lindblad evolution by any quantum operation that converges to the desired projected subspace. Unlike the related Trotter product formula, the best-known convergence rate of the quantum Zeno effect is limited to the order $1/n$. In this work, we improve the convergence rate using a multi-product formula to achieve any power of $1/n^{K+1}$, employing a modified Chernoff Lemma, a modified Dunford-Segal approximation, and the holomorphic functional calculus. We briefly illustrate this scheme using the bosonic cat code as an example, along with a broader class of cases governed by the `Bang-Bang' method for decoupling systems from their environment."
+    abstract: "The quantum Zeno effect is a fundamental mechanism for implementing the effective dynamics of projected Hamiltonian and Lindbladian systems. It approximates the target projected evolution by interleaving Hamiltonian or Lindblad dynamics with quantum operations associated with the desired subspace. In contrast to the related Trotter product formula, the best-known convergence rate of the quantum Zeno effect is typically limited to order $1/n$. In this work, we improve this convergence rate by employing a multi-product formula, thereby achieving arbitrarily high-order convergence of the form $1/n^{K+1}$. This yields an improved approximation scheme for Zeno-like expectation values via an efficient post-processing method. The approach combines a modified Chernoff lemma, an adapted Dunford-Segal approximation, holomorphic functional calculus, and Chebyshev interpolation. We illustrate the method with the bosonic cat code and also consider the broader class of systems governed by the Bang-Bang decoupling method."
     links:
       - text: "arXiv:2410.16260"
         url: "https://arxiv.org/abs/2410.16260"

@@ -2,7 +2,7 @@
 layout: cv
 title: Curriculum Vitae
 permalink: /cv/
-last_updated: January 2026
+last_updated: July 2026
 description: This page lists my higher education, teaching experience, and employment.
 
 education:
@@ -47,16 +47,16 @@ education:
         text: "Introduction to Numerical Linear Algebra, Functional Analysis, Nonlinear Dynamics, Lab Course: Programming with R, Experimental Physics 1–2, Introduction to Programming, Advanced Seminar Course: Introduction to Neural Networks, Introduction to Probability Theory, Mathematical Models in Continuum Mechanics, Mathematical Modeling: Case Studies, Basic Statistics, Measure and Integration, Algebra, Ordinary Differential Equations, Introduction to Nonlinear Optimization, Elementary Differential Geometry, Complex Analysis, Analysis 1–2, Linear Algebra and Discrete Structures 1–2, English – Gateway to English Master’s (C1)"
 
 employment:
-  - date: "present"
-    title: Postdoctoral Visiting Research Fellow
-    institution: University of Cambridge
-    institution_url: https://www.damtp.cam.ac.uk/
+  - date: "future"
+    title: Postdoctoral Visiting Research Fellow (Programme Participant)
+    institution: Isaac Newton Institute for Mathematical Sciences --- Mathematics of Many‑Body Entanglement
+    institution_url: https://www.newton.ac.uk/event/mmb/
     location: United Kingdom
     details:
       - label: Period
-        text: "10.2025 - present"
+        text: "10.2026 - 12.2026"
       - label: Funding
-        text: "<a href=\"https://fit.uni-tuebingen.de/Project/Details?id=13333\">DFG Grant \"Initiation of International Collaboration\" with the topic \"Stability of Local Expectation in the Thermal Limit\"</a>, <a href=\"https://www.trr352.de/\">SFB TRR 352</a>, and <a href=\"https://quantera.eu/touqan/\">QuantEra TouQan (DFG)</a>"
+        text: "Isaac Newton Institute for Mathematical Sciences (INI)"
 
   - date: "present"
     title: Research Associate (Postdoctoral Researcher)
@@ -66,6 +66,17 @@ employment:
     details:
       - label: Period
         text: "05.2024 - present"
+      - label: Funding
+        text: "<a href=\"https://fit.uni-tuebingen.de/Project/Details?id=13333\">DFG Grant \"Initiation of International Collaboration\" with the topic \"Stability of Local Expectation in the Thermal Limit\"</a>, <a href=\"https://www.trr352.de/\">SFB TRR 352</a>, and <a href=\"https://quantera.eu/touqan/\">QuantEra TouQan (DFG)</a>"
+
+  - date: "2025/26"
+    title: Postdoctoral Visiting Research Fellow
+    institution: University of Cambridge
+    institution_url: https://www.damtp.cam.ac.uk/
+    location: United Kingdom
+    details:
+      - label: Period
+        text: "10.2025 - 04.2026"
       - label: Funding
         text: "<a href=\"https://fit.uni-tuebingen.de/Project/Details?id=13333\">DFG Grant \"Initiation of International Collaboration\" with the topic \"Stability of Local Expectation in the Thermal Limit\"</a>, <a href=\"https://www.trr352.de/\">SFB TRR 352</a>, and <a href=\"https://quantera.eu/touqan/\">QuantEra TouQan (DFG)</a>"
     
